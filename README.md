@@ -22,10 +22,6 @@ Welcome to My Responsive Portfolio! This is a personal portfolio website showcas
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Contact
 
 If you have any questions or want to get in touch, you can reach me at [tobysun73@gmail.com](mailto:tobysun73@gmail.com).
