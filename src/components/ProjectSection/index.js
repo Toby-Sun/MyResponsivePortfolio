@@ -38,10 +38,9 @@ const ProjectSection = React.forwardRef((props, ref) => {
                 digital experiences.
               </Description>
               <Skills>React.js HTML CSS JSON</Skills>
-              {/* change the url link later !!! */}
               <Icon>
                 <IconLink
-                  href="https://github.com/Toby-Sun"
+                  href="https://github.com/Toby-Sun/MyResponsivePortfolio"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -49,7 +48,7 @@ const ProjectSection = React.forwardRef((props, ref) => {
                   <GitHubIcon />
                 </IconLink>
                 <IconLink
-                  href="https://github.com/Toby-Sun"
+                  href="tobysunportfolio.com"
                   target="_blank"
                   rel="noreferrer"
                 >

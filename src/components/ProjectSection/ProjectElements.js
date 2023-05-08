@@ -24,7 +24,7 @@ export const ProjectTitle = styled.h1`
 `;
 
 export const ProjectWrapper = styled.div`
-  padding: 40px 0;
+  padding: 60px 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
