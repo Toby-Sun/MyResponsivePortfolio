@@ -6,7 +6,7 @@ import InfoSection from "../components/InfoSection";
 import ProjectSection from "../components/ProjectSection";
 import SkillSection from "../components/SkillSection";
 import Footer from "../components/Footer";
-
+import ContactMeSection from "../components/ContactMeSection";
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
   const projectSectionRef = useRef(null);
@@ -35,6 +35,7 @@ const Home = () => {
       <ProjectSection ref={projectSectionRef} />
       <SkillSection ref={skillSectionRef} />
       <InfoSection ref={infoSectionRef} />
+      <ContactMeSection />
       <Footer />
     </>
   );
