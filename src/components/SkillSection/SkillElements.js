@@ -35,6 +35,10 @@ export const SkillBlock = styled.div`
   width: 400px;
   border: solid;
   margin: 30px 30px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const SkillType = styled.h3`

@@ -59,7 +59,7 @@ export const Heading = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 28px;
+  font-size: 24px;
   color: #fff;
   line-height: 32px;
   max-width: 720px;

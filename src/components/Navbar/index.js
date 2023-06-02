@@ -18,6 +18,7 @@ const Navbar = ({
   projectSectionRef,
   skillSectionRef,
   infoSectionRef,
+  contactMeSectionRef,
 }) => {
   const scrollToSection = (ref) => {
     const navbarHeight = 80;
@@ -55,6 +56,11 @@ const Navbar = ({
             <NavItem>
               <NavLinks onClick={() => scrollToSection(infoSectionRef)}>
                 About
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks onClick={() => scrollToSection(contactMeSectionRef)}>
+                Contact
               </NavLinks>
             </NavItem>
           </NavMenu>

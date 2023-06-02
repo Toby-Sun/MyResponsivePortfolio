@@ -14,7 +14,7 @@ import {
   ContactButton,
 } from "./ContactMeElements";
 
-const ContactMeSection = () => {
+const ContactMeSection = React.forwardRef((_props, ref) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -41,31 +41,39 @@ const ContactMeSection = () => {
     e.target.reset();
   };
   return (
-    <ContactContainer>
-      <ImgWrap>
-        <Img src={ContactMePic} alt="" />
-      </ImgWrap>
-      <TextWrapper>
-        <Heading>Contact Me</Heading>
-        <ContactForm ref={form} onSubmit={sendEmail}>
-          <ContactInput
-            type="text"
-            name="user_name"
-            placeholder="Your Name"
-            required
-          />
-          <ContactInput
-            type="email"
-            name="user_email"
-            placeholder="Your Email"
-            required
-          />
-          <ContactTextarea name="message" placeholder="Your Message" required />
-          <ContactButton type="submit">Send Message</ContactButton>
-        </ContactForm>
-      </TextWrapper>
-    </ContactContainer>
+    <>
+      <section ref={ref}>
+        <ContactContainer>
+          <ImgWrap>
+            <Img src={ContactMePic} alt="" />
+          </ImgWrap>
+          <TextWrapper>
+            <Heading>Contact Me</Heading>
+            <ContactForm ref={form} onSubmit={sendEmail}>
+              <ContactInput
+                type="text"
+                name="user_name"
+                placeholder="Your Name"
+                required
+              />
+              <ContactInput
+                type="email"
+                name="user_email"
+                placeholder="Your Email"
+                required
+              />
+              <ContactTextarea
+                name="message"
+                placeholder="Your Message"
+                required
+              />
+              <ContactButton type="submit">Send Message</ContactButton>
+            </ContactForm>
+          </TextWrapper>
+        </ContactContainer>
+      </section>
+    </>
   );
-};
+});
 
 export default ContactMeSection;

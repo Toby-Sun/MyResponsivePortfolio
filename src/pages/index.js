@@ -13,6 +13,7 @@ const Home = () => {
   const projectSectionRef = useRef(null);
   const skillSectionRef = useRef(null);
   const infoSectionRef = useRef(null);
+  const contactMeSectionRef = useRef(null);
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -25,18 +26,20 @@ const Home = () => {
         projectSectionRef={projectSectionRef}
         skillSectionRef={skillSectionRef}
         infoSectionRef={infoSectionRef}
+        contactMeSectionRef={contactMeSectionRef}
       />
       <Navbar
         toggle={toggle}
         projectSectionRef={projectSectionRef}
         skillSectionRef={skillSectionRef}
         infoSectionRef={infoSectionRef}
+        contactMeSectionRef={contactMeSectionRef}
       />
       <HeroSection />
       <ProjectSection ref={projectSectionRef} />
       <SkillSection ref={skillSectionRef} />
       <InfoSection ref={infoSectionRef} />
-      <ContactMeSection />
+      <ContactMeSection ref={contactMeSectionRef} />
       <Footer />
     </>
   );

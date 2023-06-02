@@ -50,6 +50,7 @@ export const Img = styled.img`
 `;
 export const TextWrapper = styled.div`
   flex-basis: 45%;
+  padding-top: 14px;
 
   @media screen and (max-width: 768px) {
     flex-basis: 70%;
@@ -60,7 +61,7 @@ export const TextWrapper = styled.div`
 `;
 export const Heading = styled.h1`
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
 
   @media screen and (max-width: 768px) {
@@ -84,7 +85,7 @@ export const Description = styled.p`
 `;
 export const Skills = styled.h2`
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   padding-bottom: 20px;
   color: #fff;
 

@@ -16,7 +16,7 @@ import {
   IconText,
 } from "./infoElements";
 
-const InfoSection = React.forwardRef((props, ref) => {
+const InfoSection = React.forwardRef((_props, ref) => {
   return (
     <>
       <section ref={ref}>
@@ -49,10 +49,10 @@ const InfoSection = React.forwardRef((props, ref) => {
                 As a recent software development graduate, I'm passionate about
                 coding and eager to learn new skills. I've completed projects
                 using a variety of programming languages and technologies such
-                as MERN, Java, Python, MySQL, among others. I'm excited to apply
-                my knowledge to real-world problems, begin my career in web and
-                software development, and contribute to dynamic and impactful
-                projects.
+                as React.js, Next.js, Python, MySQL, among others. I'm excited
+                to apply my knowledge to real-world problems, begin my career in
+                web and software development, and contribute to dynamic and
+                impactful projects.
               </Paragraph>
             </TextWrapper>
           </InfoWrapper>
