@@ -51,7 +51,7 @@ const ProjectSection = React.forwardRef((props, ref) => {
                   <GitHubIcon />
                 </IconLink>
                 <IconLink
-                  href="kalisoundbox.com"
+                  href="https://kalisoundbox.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -85,7 +85,7 @@ const ProjectSection = React.forwardRef((props, ref) => {
                   <GitHubIcon />
                 </IconLink>
                 <IconLink
-                  href="tobysunportfolio.com"
+                  href="https://tobysunportfolio.com"
                   target="_blank"
                   rel="noreferrer"
                 >
