@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import ContactMePic from "../../images/contactMe.svg";
+import { toast } from "react-hot-toast";
 import {
   ContactContainer,
   ImgWrap,
@@ -12,7 +14,32 @@ import {
   ContactButton,
 } from "./ContactMeElements";
 
-const ContactMe = () => {
+const ContactMeSection = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_b5jcrtb",
+        "template_z0frxlg",
+        form.current,
+        "2PqzACZzIZjuZXjtZ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success(
+            "Thank you for contacting us! We have received your message and will be in touch shortly."
+          );
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <ContactContainer>
       <ImgWrap>
@@ -20,15 +47,25 @@ const ContactMe = () => {
       </ImgWrap>
       <TextWrapper>
         <Heading>Contact Me</Heading>
-        <ContactForm>
-          <ContactInput type="text" placeholder="Your Name" required />
-          <ContactInput type="email" placeholder="Your Email" required />
-          <ContactTextarea placeholder="Your Message" required />
-          <ContactButton>Send Message</ContactButton>
+        <ContactForm ref={form} onSubmit={sendEmail}>
+          <ContactInput
+            type="text"
+            name="user_name"
+            placeholder="Your Name"
+            required
+          />
+          <ContactInput
+            type="email"
+            name="user_email"
+            placeholder="Your Email"
+            required
+          />
+          <ContactTextarea name="message" placeholder="Your Message" required />
+          <ContactButton type="submit">Send Message</ContactButton>
         </ContactForm>
       </TextWrapper>
     </ContactContainer>
   );
 };
 
-export default ContactMe;
+export default ContactMeSection;

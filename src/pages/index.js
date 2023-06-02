@@ -7,6 +7,7 @@ import ProjectSection from "../components/ProjectSection";
 import SkillSection from "../components/SkillSection";
 import Footer from "../components/Footer";
 import ContactMeSection from "../components/ContactMeSection";
+
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
   const projectSectionRef = useRef(null);
