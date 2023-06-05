@@ -19,6 +19,7 @@ const Navbar = ({
   skillSectionRef,
   infoSectionRef,
   contactMeSectionRef,
+  otherSectionRef,
 }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -75,6 +76,11 @@ const Navbar = ({
             <NavItem>
               <NavLinks onClick={() => scrollToSection(contactMeSectionRef)}>
                 Contact
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks onClick={() => scrollToSection(otherSectionRef)}>
+                Other
               </NavLinks>
             </NavItem>
           </NavMenu>

@@ -7,6 +7,7 @@ import ProjectSection from "../components/ProjectSection";
 import SkillSection from "../components/SkillSection";
 import Footer from "../components/Footer";
 import ContactMeSection from "../components/ContactMeSection";
+import OtherSection from "../components/OtherSection";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +15,7 @@ const Home = () => {
   const skillSectionRef = useRef(null);
   const infoSectionRef = useRef(null);
   const contactMeSectionRef = useRef(null);
+  const otherSectionRef = useRef(null);
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -27,6 +29,7 @@ const Home = () => {
         skillSectionRef={skillSectionRef}
         infoSectionRef={infoSectionRef}
         contactMeSectionRef={contactMeSectionRef}
+        otherSectionRef={otherSectionRef}
       />
       <Navbar
         toggle={toggle}
@@ -34,12 +37,14 @@ const Home = () => {
         skillSectionRef={skillSectionRef}
         infoSectionRef={infoSectionRef}
         contactMeSectionRef={contactMeSectionRef}
+        otherSectionRef={otherSectionRef}
       />
       <HeroSection />
       <ProjectSection ref={projectSectionRef} />
       <SkillSection ref={skillSectionRef} />
       <InfoSection ref={infoSectionRef} />
       <ContactMeSection ref={contactMeSectionRef} />
+      <OtherSection ref={otherSectionRef} />
       <Footer />
     </>
   );

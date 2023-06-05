@@ -17,6 +17,7 @@ const Sidebar = ({
   skillSectionRef,
   infoSectionRef,
   contactMeSectionRef,
+  otherSectionRef,
 }) => {
   const scrollToSection = (ref) => {
     const navbarHeight = 80;
@@ -46,6 +47,9 @@ const Sidebar = ({
           </SidebarLink>
           <SidebarLink onClick={() => scrollToSection(contactMeSectionRef)}>
             Contact
+          </SidebarLink>
+          <SidebarLink onClick={() => scrollToSection(otherSectionRef)}>
+            Other
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>

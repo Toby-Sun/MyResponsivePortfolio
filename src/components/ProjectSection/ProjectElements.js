@@ -88,6 +88,7 @@ export const Skills = styled.h2`
   font-size: 20px;
   padding-bottom: 20px;
   color: #fff;
+  font-style: italic;
 
   @media screen and (max-width: 768px) {
     font-size: 18px;

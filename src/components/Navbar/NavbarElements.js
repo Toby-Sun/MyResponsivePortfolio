@@ -91,6 +91,11 @@ export const NavLinks = styled(LinkScroll)`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -107,12 +112,5 @@ export const NavBtnLink = styled(LinkRouter)`
   outline: none;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
   text-decoration: none;
-
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
-  }
 `;
