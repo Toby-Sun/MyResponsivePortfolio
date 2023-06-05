@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import {
@@ -20,6 +20,20 @@ const Navbar = ({
   infoSectionRef,
   contactMeSectionRef,
 }) => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const scrollToSection = (ref) => {
     const navbarHeight = 80;
     const sectionPosition = ref.current.offsetTop - navbarHeight;
@@ -36,7 +50,7 @@ const Navbar = ({
   };
   return (
     <>
-      <Nav>
+      <Nav scrollPosition={scrollPosition}>
         <NavbarContainer>
           <NavLogo onClick={scrollToTop}>toby.sun</NavLogo>
           <MobileIcon onClick={toggle}>
