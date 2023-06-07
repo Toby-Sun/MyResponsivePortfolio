@@ -39,6 +39,7 @@ export const TextWrapper = styled.div`
   margin: 30px;
   transition: transform 0.3s ease-in-out;
   flex: 0 0 calc(50% - 60px);
+  flex-basis: 40%;
 
   @media screen and (max-width: 480px) {
     width: 80%;
