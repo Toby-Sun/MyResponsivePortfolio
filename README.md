@@ -5,17 +5,18 @@ Welcome to My Responsive Portfolio! This is a personal portfolio website showcas
 ## Features
 
 - Responsive design for mobile, tablet, and desktop
-- Sections for projects, skills, and about me
+- Sections for projects, skills, about me, contact me and other noteworthy project.
 - Interactive navigation menu
 - Integration with external links and resources
-- Easy customization and content updates
 
 ## Technologies Used
 
+- React.js
+- Node.js
+- EmailJS
 - HTML5
 - CSS3
 - JavaScript
-- React
 - styled-components
 
 ## Contributing
