@@ -42,7 +42,7 @@ export const TextWrapper = styled.div`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
   @media screen and (max-width: 768px) {
-    width: 70%;
+    width: 85%;
     padding: 20px;
   }
 `;

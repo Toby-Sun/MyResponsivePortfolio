@@ -6,7 +6,6 @@ import bootstrap from "../../images/bootstrap.png";
 import angular from "../../images/angular.png";
 
 import node from "../../images/nodejs.png";
-import express from "../../images/express.png";
 import typescript from "../../images/typescript.png";
 import python from "../../images/python.png";
 import java from "../../images/java.png";
@@ -31,21 +30,16 @@ export const FrondEndSkills = [
   },
   {
     id: 3,
-    src: js,
-    title: "JavaScript",
-  },
-  {
-    id: 4,
     src: react,
     title: "React",
   },
   {
-    id: 5,
+    id: 4,
     src: bootstrap,
     title: "Bootstrap",
   },
   {
-    id: 6,
+    id: 5,
     src: angular,
     title: "Angular",
   },
@@ -59,8 +53,8 @@ export const BackEndSkills = [
   },
   {
     id: 2,
-    src: express,
-    title: "Express.js",
+    src: js,
+    title: "Javascript",
   },
   {
     id: 3,

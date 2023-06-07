@@ -56,7 +56,7 @@ export const TextWrapper = styled.div`
     flex-basis: 70%;
   }
   @media screen and (max-width: 480px) {
-    flex-basis: 80%;
+    flex-basis: 85%;
   }
 `;
 export const Heading = styled.h1`
@@ -77,7 +77,7 @@ export const Description = styled.p`
   font-size: 20px;
   color: #fff;
   line-height: 28px;
-  padding: 20px 80px;
+  padding: 20px 50px;
 
   @media screen and (max-width: 768px) {
     padding: 20px 0;

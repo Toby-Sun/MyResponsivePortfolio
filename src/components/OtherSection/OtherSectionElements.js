@@ -9,6 +9,13 @@ export const Title = styled.h1`
   color: #fff;
   text-align: center;
   padding-top: 30px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 28px;
+  }
 `;
 
 export const OtherProjectWrapper = styled.div`
@@ -24,12 +31,12 @@ export const OtherProjectWrapper = styled.div`
 `;
 
 export const TextWrapper = styled.div`
+  padding: 10px;
   border-style: solid;
   border-color: #f3f3f3;
   border-top-right-radius: 50px 50px;
+  border-bottom-left-radius: 50px 50px;
   margin: 30px;
-  width: 300px;
-  height: 340px;
   transition: transform 0.3s ease-in-out;
   flex: 0 0 calc(50% - 60px);
 
@@ -54,12 +61,11 @@ export const Img = styled.img`
 
 export const IconLink = styled.a`
   text-decoration: none;
-  color: #fff;
 `;
 
 export const Heading = styled.h4`
   color: #fff;
-  font-size: 24px;
+  font-size: 30px;
   margin: 10px;
 `;
 

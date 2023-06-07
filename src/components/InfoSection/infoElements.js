@@ -41,7 +41,7 @@ export const TextWrapper = styled.div`
     flex-basis: 60%;
   }
   @media screen and (max-width: 480px) {
-    flex-basis: 70%;
+    flex-basis: 85%;
   }
 `;
 

@@ -49,7 +49,7 @@ const Sidebar = ({
             Contact
           </SidebarLink>
           <SidebarLink onClick={() => scrollToSection(otherSectionRef)}>
-            Other
+            Others
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>

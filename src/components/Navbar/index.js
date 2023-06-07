@@ -80,7 +80,7 @@ const Navbar = ({
             </NavItem>
             <NavItem>
               <NavLinks onClick={() => scrollToSection(otherSectionRef)}>
-                Other
+                Others
               </NavLinks>
             </NavItem>
           </NavMenu>
