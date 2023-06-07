@@ -6,6 +6,7 @@ import bootstrap from "../../images/bootstrap.png";
 import angular from "../../images/angular.png";
 
 import node from "../../images/nodejs.png";
+import nextJS from "../../images/nextJS.png";
 import typescript from "../../images/typescript.png";
 import python from "../../images/python.png";
 import java from "../../images/java.png";
@@ -53,28 +54,28 @@ export const BackEndSkills = [
   },
   {
     id: 2,
+    src: nextJS,
+    title: "Next.js",
+  },
+  {
+    id: 3,
     src: js,
     title: "Javascript",
   },
   {
-    id: 3,
+    id: 4,
     src: typescript,
     title: "TypeScript",
   },
   {
-    id: 4,
+    id: 5,
     src: python,
     title: "Python",
   },
   {
-    id: 5,
+    id: 6,
     src: java,
     title: "Java",
-  },
-  {
-    id: 6,
-    src: c,
-    title: "C",
   },
 ];
 
