@@ -117,12 +117,12 @@ export const OtherTools = [
   {
     id: 1,
     src: vsCode,
-    title: "Visual Studio Code",
+    title: "VS Code",
   },
   {
     id: 2,
     src: github,
-    title: "Github",
+    title: "GitHub",
   },
   {
     id: 3,
