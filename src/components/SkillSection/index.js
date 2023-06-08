@@ -1,5 +1,10 @@
 import React from "react";
-import { FrondEndSkills, BackEndSkills, DataBaseSkills } from "./SkillSet";
+import {
+  FrondEndSkills,
+  BackEndSkills,
+  DataBaseSkills,
+  OtherTools,
+} from "./SkillSet";
 import {
   SkillContainer,
   SkillWrapper,
@@ -47,6 +52,18 @@ const SkillSection = React.forwardRef((props, ref) => {
               <SkillType>DataBase</SkillType>
               <SkillImgBlock>
                 {DataBaseSkills.map(({ id, src, title }) => (
+                  <SkillImgWrap key={id}>
+                    <SkillImg src={src}></SkillImg>
+                    <SkillName>{title}</SkillName>
+                  </SkillImgWrap>
+                ))}
+              </SkillImgBlock>
+            </SkillBlock>
+
+            <SkillBlock>
+              <SkillType>Other Tools</SkillType>
+              <SkillImgBlock>
+                {OtherTools.map(({ id, src, title }) => (
                   <SkillImgWrap key={id}>
                     <SkillImg src={src}></SkillImg>
                     <SkillName>{title}</SkillName>

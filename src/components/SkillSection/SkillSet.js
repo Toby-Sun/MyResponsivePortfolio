@@ -10,13 +10,19 @@ import nextJS from "../../images/nextJS.png";
 import typescript from "../../images/typescript.png";
 import python from "../../images/python.png";
 import java from "../../images/java.png";
-import c from "../../images/C.png";
 
 import mongoDB from "../../images/mongoDB.png";
 import oracle from "../../images/oracle.png";
 import mysql from "../../images/mysql.png";
 import sql from "../../images/sql.png";
 import postgresql from "../../images/postgresql.png";
+
+import vsCode from "../../images/vsCode.png";
+import github from "../../images/github.png";
+import git from "../../images/git.png";
+import selenium from "../../images/selenium.png";
+import yarn from "../../images/yarn.png";
+import npm from "../../images/npm.png";
 
 export const FrondEndSkills = [
   {
@@ -104,5 +110,38 @@ export const DataBaseSkills = [
     id: 5,
     src: postgresql,
     title: "PostgreSQL",
+  },
+];
+
+export const OtherTools = [
+  {
+    id: 1,
+    src: vsCode,
+    title: "Visual Studio Code",
+  },
+  {
+    id: 2,
+    src: github,
+    title: "Github",
+  },
+  {
+    id: 3,
+    src: git,
+    title: "Git",
+  },
+  {
+    id: 4,
+    src: selenium,
+    title: "Selenium",
+  },
+  {
+    id: 5,
+    src: yarn,
+    title: "Yarn",
+  },
+  {
+    id: 6,
+    src: npm,
+    title: "npm",
   },
 ];

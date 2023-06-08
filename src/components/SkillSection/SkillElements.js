@@ -9,12 +9,11 @@ export const SkillContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    max-height: 2000px;
+    max-height: 2500px;
   }
 `;
 
 export const SkillWrapper = styled.div`
-  justify-content: center;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -31,10 +30,15 @@ export const SkillTopic = styled.h1`
 `;
 
 export const SkillBlock = styled.div`
-  width: 100%;
-  width: 400px;
-  border: solid;
-  margin: 30px 30px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 2px 0px 8px rgba(0, 0, 0, 1);
+  margin: 30px 0px;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   @media screen and (max-width: 768px) {
     margin-bottom: 0;
@@ -60,13 +64,12 @@ export const SkillImgBlock = styled.div`
   justify-items: center;
 `;
 export const SkillImgWrap = styled.div`
-  width: 100px;
+  width: 80px;
   padding: 10px 0;
 `;
 
 export const SkillImg = styled.img`
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 100%;
 `;
 
 export const SkillName = styled.p`
