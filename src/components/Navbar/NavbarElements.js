@@ -84,6 +84,11 @@ export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: 600;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #088f8f;
+  }
 `;
 
 export const NavBtn = styled.nav`
@@ -108,10 +113,10 @@ export const NavBtnLink = styled(LinkRouter)`
   border: none;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.5s, color 0.5s transform 0.5s;
+  transition: background-color 0.8s, color 0.8s, transform 0.8s;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     background: #088f8f;
     color: #fff;
   }

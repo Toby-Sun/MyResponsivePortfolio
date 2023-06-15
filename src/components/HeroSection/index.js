@@ -1,5 +1,5 @@
-import React from "react";
-import Video from "../../videos/video.mp4";
+import React from 'react';
+import Video from '../../videos/video.mp4';
 import {
   HeroContainer,
   HeroBg,
@@ -7,7 +7,7 @@ import {
   HeroContent,
   HeroP2,
   HeroH1,
-} from "./HeroElements";
+} from './HeroElements';
 
 const HeroSection = () => {
   return (
@@ -17,7 +17,7 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>Toby Sun</HeroH1>
-        <HeroP2>A Full Stack Developer with passion and persistence.</HeroP2>
+        <HeroP2>A Frond-end Developer.</HeroP2>
       </HeroContent>
     </HeroContainer>
   );

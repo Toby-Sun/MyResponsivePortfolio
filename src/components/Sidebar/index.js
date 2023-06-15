@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   SidebarContainer,
   Icon,
@@ -8,7 +8,7 @@ import {
   SidebarLink,
   SideBtnWrap,
   SidebarRoute,
-} from "./SidebarElements";
+} from './SidebarElements';
 
 const Sidebar = ({
   isOpen,
@@ -24,7 +24,7 @@ const Sidebar = ({
     const sectionPosition = ref.current.offsetTop - navbarHeight;
     window.scrollTo({
       top: sectionPosition,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
     toggle(); // Close the sidebar menu
   };
@@ -54,7 +54,7 @@ const Sidebar = ({
         </SidebarMenu>
         <SideBtnWrap>
           <SidebarRoute
-            to="https://drive.google.com/file/d/1fuSJ67ZdNbd70LmhstPdUh0BbjjBMQWe/view?usp=share_link"
+            to="https://drive.google.com/file/d/1Qib16xzXhPIrCFoeS3zAZNFqkeZczzIX/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
