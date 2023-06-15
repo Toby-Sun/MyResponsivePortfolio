@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { Link as LinkRouter } from "react-router-dom";
-import { Link as LinkScroll } from "react-scroll";
+import styled from 'styled-components';
+import { Link as LinkRouter } from 'react-router-dom';
+import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
   background: #000;
@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-  opacity: ${(props) => (props.scrollPosition > 0 ? 0.6 : 1)};
+  opacity: ${(props) => (props.scrollPosition > 0 ? 0.3 : 1)};
   transition: opacity 0.3s ease-in-out;
 
   @media screen and (max-width: 960px) {
@@ -22,7 +22,7 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
   display: flex;
-  justify-content: space-betweem;
+  justify-content: space-between;
   height: 80px;
   z-index: 1;
   width: 100%;
@@ -30,16 +30,16 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 
-export const NavLogo = styled(LinkRouter)`
-  color: #fff;
+export const ImgWrap = styled(LinkRouter)`
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 2rem;
   display: flex;
   align-items: center;
-  margin-left: 10px;
-  font-weight: bold;
-  text-decoration: none;
+`;
+
+export const Img = styled.img`
+  height: auto;
+  max-width: 180px;
 `;
 
 export const MobileIcon = styled.div`
@@ -82,20 +82,14 @@ export const NavLinks = styled(LinkScroll)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-
-  &.active {
-    border-bottom: 3px solid #01bf71;
-  }
+  font-size: 1.5rem;
+  font-weight: 600;
 `;
 
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
   transition: transform 0.3s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -108,9 +102,17 @@ export const NavBtnLink = styled(LinkRouter)`
   white-space: nowrap;
   padding: 10px 22px;
   color: #010606;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
   outline: none;
   border: none;
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 0.5s, color 0.5s transform 0.5s;
+
+  &:hover {
+    transform: scale(1.05);
+    background: #088f8f;
+    color: #fff;
+  }
 `;

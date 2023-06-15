@@ -1,17 +1,19 @@
-import React, { useState, useEffect } from "react";
-import { animateScroll as scroll } from "react-scroll";
-import { FaBars } from "react-icons/fa";
+import React, { useState, useEffect } from 'react';
+import { animateScroll as scroll } from 'react-scroll';
+import { FaBars } from 'react-icons/fa';
+import logo from '../../images/logo.png';
 import {
   Nav,
   NavbarContainer,
-  NavLogo,
+  ImgWrap,
+  Img,
   MobileIcon,
   NavMenu,
   NavItem,
   NavLinks,
   NavBtn,
   NavBtnLink,
-} from "./NavbarElements";
+} from './NavbarElements';
 
 const Navbar = ({
   toggle,
@@ -29,9 +31,9 @@ const Navbar = ({
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -40,20 +42,22 @@ const Navbar = ({
     const sectionPosition = ref.current.offsetTop - navbarHeight;
     window.scrollTo({
       top: sectionPosition,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
   const scrollToTop = () => {
     scroll.scrollToTop({
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
   return (
     <>
       <Nav scrollPosition={scrollPosition}>
         <NavbarContainer>
-          <NavLogo onClick={scrollToTop}>toby.sun</NavLogo>
+          <ImgWrap onClick={scrollToTop}>
+            <Img src={logo} />
+          </ImgWrap>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
