@@ -1,4 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import projectBG from '../../images/projectBg.png';
+import projectBG2 from '../../images/projectBg2.png';
 
 export const ProjectContainer = styled.div`
   background: #000;
@@ -48,17 +50,41 @@ export const Img = styled.img`
     max-height: 250px;
   }
 `;
+
 export const TextWrapper = styled.div`
   flex-basis: 45%;
   padding-top: 14px;
-
-  @media screen and (max-width: 768px) {
-    flex-basis: 70%;
-  }
-  @media screen and (max-width: 480px) {
-    flex-basis: 85%;
-  }
+  margin-left: 80px;
+  position: relative;
+  z-index: 1;
 `;
+
+export const TextBG = styled.div`
+  position: absolute;
+  top: -10%;
+  left: 18%;
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(${projectBG});
+  z-index: -1;
+  opacity: 0.7;
+`;
+
+export const TextBG2 = styled.div`
+  position: absolute;
+  top: -10%;
+  left: 18%;
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(${projectBG2});
+  z-index: -1;
+  opacity: 0.7;
+`;
+
 export const Heading = styled.h1`
   color: #fff;
   font-size: 30px;
@@ -73,19 +99,22 @@ export const Heading = styled.h1`
     padding-top: 14px;
   }
 `;
+
 export const Description = styled.p`
-  font-size: 20px;
+  font-size: 22px;
   color: #fff;
   line-height: 28px;
-  padding: 20px 50px;
+  padding: 20px 20px;
+  text-align: left;
 
   @media screen and (max-width: 768px) {
     padding: 20px 0;
   }
 `;
+
 export const Skills = styled.h2`
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   padding-bottom: 20px;
   color: #fff;
   font-style: italic;

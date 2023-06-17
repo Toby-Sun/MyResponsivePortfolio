@@ -1,8 +1,8 @@
-import React from "react";
-import ecommercePic from "../../images/ecommercePic.png";
-import portfolioPic from "../../images/portfolioPic.png";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import DemoIcon from "@material-ui/icons/OpenInNew";
+import React from 'react';
+import ecommercePic from '../../images/ecommercePic.png';
+import portfolioPic from '../../images/portfolioPic.png';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import DemoIcon from '@material-ui/icons/OpenInNew';
 
 import {
   ProjectContainer,
@@ -11,25 +11,28 @@ import {
   ImgWrap,
   Img,
   TextWrapper,
+  TextBG,
+  TextBG2,
   Heading,
   Description,
   Skills,
   Icon,
   IconLink,
   IconText,
-} from "./ProjectElements";
+} from './ProjectElements';
 
 const ProjectSection = React.forwardRef((props, ref) => {
   return (
     <>
       <section ref={ref}>
         <ProjectContainer>
-          <ProjectTitle>Projects (Continuously Updating)</ProjectTitle>
+          <ProjectTitle>Projects (continuously updating)</ProjectTitle>
           <ProjectWrapper>
             <ImgWrap>
               <Img src={ecommercePic} />
             </ImgWrap>
             <TextWrapper>
+              <TextBG />
               <Heading>Full-Stack Ecommerce Website</Heading>
               <Description>
                 Welcome to Kali Soundbox online store. Explore our collection of
@@ -66,7 +69,8 @@ const ProjectSection = React.forwardRef((props, ref) => {
               <Img src={portfolioPic} />
             </ImgWrap>
             <TextWrapper>
-              <Heading>Portfolio</Heading>
+              <TextBG2 />
+              <Heading>Portfolio Website</Heading>
               <Description>
                 A responsive portfolio website showcases a collection of my
                 projects and skills in web development and design. Explore my
