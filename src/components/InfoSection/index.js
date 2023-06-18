@@ -1,7 +1,7 @@
-import React from "react";
-import ProfilePic from "../../images/profilePic.jpg";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import React from 'react';
+import ProfilePic from '../../images/profilePic.jpg';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 import {
   InfoContainer,
@@ -14,7 +14,7 @@ import {
   Icon,
   IconLink,
   IconText,
-} from "./infoElements";
+} from './infoElements';
 
 const InfoSection = React.forwardRef((_props, ref) => {
   return (
@@ -49,10 +49,10 @@ const InfoSection = React.forwardRef((_props, ref) => {
                 As a recent software development graduate, I'm passionate about
                 coding and eager to learn new skills. I've completed projects
                 using a variety of programming languages and technologies such
-                as React.js, Next.js, Python, MySQL, among others. I'm excited
-                to apply my knowledge to real-world problems, begin my career in
-                web and software development, and contribute to dynamic and
-                impactful projects.
+                as React.js, Next.js, TypeScript, Python, MySQL, among others.
+                I'm excited to apply my knowledge to real-world problems, begin
+                my career in web and software development, and contribute to
+                dynamic and impactful projects.
               </Paragraph>
             </TextWrapper>
           </InfoWrapper>

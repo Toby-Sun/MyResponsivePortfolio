@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
   background: #000;
@@ -25,12 +25,13 @@ export const Img = styled.img`
   border-radius: 50px;
 
   @media screen and (max-width: 768px) {
-    max-width: 550px;
-    max-height: 350px;
+    max-width: 600px;
+    max-height: auto;
   }
   @media screen and (max-width: 480px) {
-    max-width: 350px;
-    max-height: 250px;
+    max-width: 380px;
+    max-height: auto;
+    padding: 0px 15px;
   }
 `;
 
@@ -38,10 +39,10 @@ export const TextWrapper = styled.div`
   flex-basis: 40%;
 
   @media screen and (max-width: 768px) {
-    flex-basis: 60%;
+    flex-basis: 65%;
   }
   @media screen and (max-width: 480px) {
-    flex-basis: 85%;
+    flex-basis: 75%;
   }
 `;
 
@@ -84,14 +85,24 @@ export const Icon = styled.div`
 
 export const IconLink = styled.a`
   display: flex;
+  padding: 5px 15px;
   align-items: center;
   margin-right: 20px;
   text-decoration: none;
-  color: #fff;
+  color: #000;
+  background-color: #fff;
+  border-radius: 15px;
+  transition: background-color 0.5s, color 0.5s, transform 0.5s;
+
+  &:hover {
+    transform: scale(1.05);
+    background: #088f8f;
+    color: #fff;
+  }
 `;
 
 export const IconText = styled.h4`
-  color: #fff;
+  color: #000;
   font-size: 24px;
   margin-right: 5px;
 `;

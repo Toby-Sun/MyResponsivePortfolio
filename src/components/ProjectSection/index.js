@@ -29,7 +29,13 @@ const ProjectSection = React.forwardRef((props, ref) => {
           <ProjectTitle>Projects (continuously updating)</ProjectTitle>
           <ProjectWrapper>
             <ImgWrap>
-              <Img src={ecommercePic} />
+              <a
+                href="https://kalisoundbox.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Img src={ecommercePic} />
+              </a>
             </ImgWrap>
             <TextWrapper>
               <TextBG />
@@ -66,7 +72,9 @@ const ProjectSection = React.forwardRef((props, ref) => {
           </ProjectWrapper>
           <ProjectWrapper>
             <ImgWrap>
-              <Img src={portfolioPic} />
+              <a href="https://tobysunportfolio.com">
+                <Img src={portfolioPic} />
+              </a>
             </ImgWrap>
             <TextWrapper>
               <TextBG2 />

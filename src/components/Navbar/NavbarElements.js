@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-  opacity: ${(props) => (props.scrollPosition > 0 ? 0.1 : 1)};
+  opacity: ${(props) => (props.scrollPosition > 0 ? 0.3 : 1)};
   transition: opacity 0.3s ease-in-out;
 
   @media screen and (max-width: 960px) {

@@ -30,10 +30,19 @@ export const ProjectWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 480px) {
+    padding: 40px 0;
+  }
 `;
 
 export const ImgWrap = styled.div`
   flex-basis: 10%;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 export const Img = styled.img`
@@ -52,24 +61,48 @@ export const Img = styled.img`
 `;
 
 export const TextWrapper = styled.div`
-  flex-basis: 45%;
+  flex-basis: 40%;
   padding-top: 14px;
-  margin-left: 80px;
+  margin-left: 70px;
   position: relative;
   z-index: 1;
+
+  @media screen and (max-width: 768px) {
+    flex-basis: 75%;
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 480px) {
+    flex-basis: 80%;
+    margin-left: 0;
+  }
 `;
 
 export const TextBG = styled.div`
   position: absolute;
   top: -10%;
-  left: 18%;
+  left: 15%;
   width: 400px;
   height: 400px;
   background-size: cover;
   background-position: center;
   background-image: url(${projectBG});
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.6;
+
+  @media screen and (max-width: 480px) {
+    width: 400px;
+    height: 400px;
+    top: 5%;
+    left: 0%;
+  }
+
+  @media screen and (max-width: 390px) {
+    width: 300px;
+    height: 300px;
+    top: 5%;
+    left: 0%;
+  }
 `;
 
 export const TextBG2 = styled.div`
@@ -82,7 +115,21 @@ export const TextBG2 = styled.div`
   background-position: center;
   background-image: url(${projectBG2});
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.5;
+
+  @media screen and (max-width: 480px) {
+    width: 400px;
+    height: 400px;
+    top: 0%;
+    left: 0%;
+  }
+
+  @media screen and (max-width: 390px) {
+    width: 300px;
+    height: 300px;
+    top: 5%;
+    left: 0%;
+  }
 `;
 
 export const Heading = styled.h1`
@@ -91,24 +138,24 @@ export const Heading = styled.h1`
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    font-size: 30px;
+    font-size: 26px;
     padding-top: 14px;
   }
   @media screen and (max-width: 480px) {
-    font-size: 24px;
+    font-size: 22px;
     padding-top: 14px;
   }
 `;
 
 export const Description = styled.p`
-  font-size: 22px;
+  font-size: 20px;
   color: #fff;
   line-height: 28px;
   padding: 20px 20px;
   text-align: left;
 
   @media screen and (max-width: 768px) {
-    padding: 20px 0;
+    padding: 20px 10px;
   }
 `;
 
@@ -120,9 +167,9 @@ export const Skills = styled.h2`
   font-style: italic;
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    font-size: 20px;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     font-size: 16px;
   }
 `;
@@ -135,14 +182,24 @@ export const Icon = styled.div`
 
 export const IconLink = styled.a`
   display: flex;
+  padding: 5px 15px;
   align-items: center;
   margin-right: 20px;
   text-decoration: none;
-  color: #fff;
+  color: #000;
+  background-color: #fff;
+  border-radius: 15px;
+  transition: background-color 0.5s, color 0.5s, transform 0.5s;
+
+  &:hover {
+    transform: scale(1.05);
+    background: #088f8f;
+    color: #fff;
+  }
 `;
 
 export const IconText = styled.h4`
-  color: #fff;
+  color: #000;
   font-size: 24px;
   margin-right: 5px;
 `;
