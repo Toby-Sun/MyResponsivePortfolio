@@ -23,7 +23,9 @@ const HeroSection = () => {
               typewriter
                 .changeDelay(50)
                 .changeDeleteSpeed(50)
-                .typeString("Hi, I'm Toby,")
+                .pauseFor(500)
+                .typeString("Hi✋, here's Toby,")
+                .pauseFor(300)
                 .typeString('<br>')
                 .typeString('a <i>Front-end</i>')
                 .pauseFor(300)
@@ -34,6 +36,9 @@ const HeroSection = () => {
                 .typeString(
                   '<i style="color:#088f8f;">Full Stack Developer</i>.'
                 )
+                .pauseFor(300)
+                .typeString('<br>')
+                .typeString("I'm an explorer.")
                 .pauseFor(300)
                 .typeString('<br>')
                 .typeString('I love coding and embracing new challenges.')

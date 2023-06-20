@@ -46,13 +46,13 @@ const InfoSection = React.forwardRef((_props, ref) => {
                 </IconLink>
               </Icon>
               <Paragraph>
-                As a recent software development graduate, I'm passionate about
-                coding and eager to learn new skills. I've completed projects
-                using a variety of programming languages and technologies such
-                as React.js, Next.js, TypeScript, Python, MySQL, among others.
-                I'm excited to apply my knowledge to real-world problems, begin
-                my career in web and software development, and contribute to
-                dynamic and impactful projects.
+                As a recent software development graduate, I am passionate about
+                coding and eager to explore and learn new skills. I have
+                completed projects using a variety of programming languages and
+                technologies, including React.js, Next.js, TypeScript, Python,
+                and MySQL, among others. I am excited to apply my knowledge to
+                real-world problems, embark on my career in web and software
+                development, and contribute to dynamic and impactful projects.
               </Paragraph>
             </TextWrapper>
           </InfoWrapper>

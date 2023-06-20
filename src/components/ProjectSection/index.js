@@ -41,11 +41,14 @@ const ProjectSection = React.forwardRef((props, ref) => {
               <TextBG />
               <Heading>Full-Stack Ecommerce Website</Heading>
               <Description>
-                Welcome to Kali Soundbox online store. Explore our collection of
-                high-quality headphones, earphones, speakers. A fully-responsive
+                Welcome to Kali Soundbox online store. A fully-responsive
                 website ensures a seamless browsing experience across all
                 devices. With secure Stripe payment integration, you can
                 conveniently choose and purchase your desired audio equipment.
+                <br />
+                <br />
+                *Please note that this is a demonstration website, NO actual
+                transactions will be processed.
               </Description>
               <Skills>
                 Next.js React.js Sanity Stripe-payment HTML CSS...
