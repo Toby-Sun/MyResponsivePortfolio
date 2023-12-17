@@ -1,5 +1,5 @@
-import React from "react";
-import pythonImg from "../../images/python.png";
+import React from 'react';
+import pythonImg from '../../images/python.png';
 
 import {
   OtherProjectContainer,
@@ -11,14 +11,14 @@ import {
   ImgWrap,
   Img,
   Description,
-} from "./OtherSectionElements";
+} from './OtherSectionElements';
 
 const OtherSection = React.forwardRef((_props, ref) => {
   return (
     <>
       <section ref={ref}>
         <OtherProjectContainer>
-          <Title>Other Noteworthy Project</Title>
+          <Title>Other Noteworthy Projects</Title>
           <OtherProjectWrapper>
             <TextWrapper>
               <IconLink

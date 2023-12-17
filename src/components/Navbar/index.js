@@ -90,7 +90,7 @@ const Navbar = ({
           </NavMenu>
           <NavBtn>
             <NavBtnLink
-              to="https://drive.google.com/file/d/1Qib16xzXhPIrCFoeS3zAZNFqkeZczzIX/view?usp=sharing"
+              to="https://drive.google.com/file/d/1r2N0Ms2vYidP4gD5lfU7GAJVq0vpcYan/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >

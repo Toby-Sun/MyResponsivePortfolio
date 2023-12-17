@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-  opacity: ${(props) => (props.scrollPosition > 0 ? 0.3 : 1)};
+  opacity: ${(props) => (props.scrollPosition > 0 ? 0.2 : 1)};
   transition: opacity 0.3s ease-in-out;
 
   @media screen and (max-width: 960px) {
@@ -113,8 +113,7 @@ export const NavBtnLink = styled(LinkRouter)`
   border: none;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.8s, color 0.8s, transform 0.8s;
-
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
   &:hover {
     transform: scale(1.1);
     background: #088f8f;

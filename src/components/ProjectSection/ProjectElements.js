@@ -189,7 +189,7 @@ export const IconLink = styled.a`
   color: #000;
   background-color: #fff;
   border-radius: 15px;
-  transition: background-color 0.5s, color 0.5s, transform 0.5s;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 
   &:hover {
     transform: scale(1.05);
